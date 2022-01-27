@@ -24,7 +24,7 @@ const Wrapper = styled.nav`
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(0, 0%, var(--lightness10));
 
     a {
         text-decoration: none;
@@ -38,11 +38,23 @@ const Wrapper = styled.nav`
     button {
         border: none;
         background-color: transparent;
+        color: inherit;
         font-size: 2rem;
         padding: 1rem 0;
         display: flex;
         align-items: center;
         cursor: pointer;
+    }
+
+    button > svg {
+        transition: var(--transition1);
+        border-radius: 100%;
+        outline: 0rem solid hsla(0, 0%, var(--lightness2), 0%);
+    }
+
+    button:hover > svg {
+        background-color: hsla(0, 0%, var(--lightness2), 50%);
+        outline: 0.3rem solid hsla(0, 0%, var(--lightness2), 50%);
     }
 `;
 

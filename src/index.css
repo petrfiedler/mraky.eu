@@ -1,3 +1,24 @@
+:root {
+    --clr1-hue: 212;
+    --clr1-saturation: 100%;
+    --clr1-lightness: 5%;
+    --clr1: hsl(var(--clr1-hue), var(--clr1-saturation), var(--clr1-lightness));
+
+    --lightness0: 0%;
+    --lightness1: 10%;
+    --lightness2: 20%;
+    --lightness3: 30%;
+    --lightness4: 40%;
+    --lightness5: 50%;
+    --lightness6: 60%;
+    --lightness7: 70%;
+    --lightness8: 80%;
+    --lightness9: 90%;
+    --lightness10: 100%;
+
+    --transition1: all 0.1s ease-in-out;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -5,4 +26,6 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--clr1);
+    color: hsl(0, 0%, var(--lightness10));
 }
