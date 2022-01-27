@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
+import { useSidebarContext } from "../context/sidebarContext";
 
 const Navbar = () => {
-    const showSidebar = () => {
-        console.log("sidebar open");
-    };
+    const { showSidebar } = useSidebarContext();
 
     return (
         <Wrapper>
