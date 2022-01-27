@@ -23,7 +23,7 @@ const Wrapper = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     border-bottom: 1px solid hsl(0, 0%, var(--lightness10));
 
     a {
@@ -33,14 +33,15 @@ const Wrapper = styled.nav`
 
     h1 {
         margin: 0;
+        font-size: 2.5rem;
     }
 
     button {
         border: none;
         background-color: transparent;
         color: inherit;
-        font-size: 2rem;
-        padding: 1rem 0;
+        font-size: 2.5rem;
+        margin: 1.5rem 0;
         display: flex;
         align-items: center;
         cursor: pointer;

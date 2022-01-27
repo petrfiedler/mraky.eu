@@ -4,6 +4,8 @@
     --clr1-lightness: 5%;
     --clr1: hsl(var(--clr1-hue), var(--clr1-saturation), var(--clr1-lightness));
 
+    --clr2: rgb(255, 174, 0);
+
     --lightness0: 0%;
     --lightness1: 10%;
     --lightness2: 20%;
@@ -17,6 +19,8 @@
     --lightness10: 100%;
 
     --transition1: all 0.1s ease-in-out;
+    --transition2: all 0.2s ease-in-out;
+    --transition3: all 0.3s ease-in-out;
 }
 
 body {
