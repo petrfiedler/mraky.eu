@@ -64,7 +64,7 @@ const Wrapper = styled.article`
     section {
         display: grid;
         gap: 2rem;
-        margin: 1rem;
+        margin: 0.25rem;
 
         @media (min-width: 980px) {
             grid-template-columns: repeat(2, 1fr);
