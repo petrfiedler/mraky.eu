@@ -45,6 +45,13 @@ const Wrapper = styled.div`
         height: 100%;
         transition: var(--transition3);
         transform-origin: top right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (min-width: 980px) {
+            display: none;
+        }
 
         a {
             text-decoration: none;
@@ -55,11 +62,11 @@ const Wrapper = styled.div`
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 1.5rem;
-            border-bottom: 1px solid hsl(0, 0%, var(--lightness10));
+            width: min(100vw, 980px);
 
             h1 {
                 margin: 0;
+                margin-left: 1.5rem;
                 font-size: 2.5rem;
             }
 
@@ -68,7 +75,7 @@ const Wrapper = styled.div`
                 background-color: transparent;
                 color: inherit;
                 font-size: 2.5rem;
-                padding: 1.5rem 0;
+                margin: 1.5rem;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
@@ -90,12 +97,13 @@ const Wrapper = styled.div`
             list-style: none;
             line-height: 2;
             margin: 0;
-            margin-top: 6rem;
+            margin-top: min(6rem, 0vh);
             padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            height: 50%;
 
             li {
                 font-size: 2rem;

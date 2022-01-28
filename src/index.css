@@ -33,3 +33,8 @@ body {
     background-color: var(--clr1);
     color: hsl(0, 0%, var(--lightness10));
 }
+
+main {
+    text-align: center;
+    margin: 5rem;
+}
