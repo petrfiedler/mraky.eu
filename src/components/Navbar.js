@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
 import { useSidebarContext } from "../context/sidebarContext";
+import { navLinks } from "../constants/navLinks";
 
 const Navbar = () => {
     const { showSidebar } = useSidebarContext();
@@ -16,6 +17,15 @@ const Navbar = () => {
                 <button onClick={showSidebar}>
                     <FiMenu />
                 </button>
+                <ul>
+                    {navLinks.map((navLink) => {
+                        return (
+                            <li key={navLink.id}>
+                                <Link to={navLink.to}>{navLink.label}</Link>
+                            </li>
+                        );
+                    })}
+                </ul>
             </div>
         </Wrapper>
     );
@@ -41,6 +51,7 @@ const Wrapper = styled.nav`
         h1 {
             margin: 0;
             font-size: 2.5rem;
+            margin: 1.5rem 0;
         }
 
         button {
@@ -52,6 +63,9 @@ const Wrapper = styled.nav`
             display: flex;
             align-items: center;
             cursor: pointer;
+            @media (min-width: 980px) {
+                display: none;
+            }
         }
 
         button > svg {
@@ -63,6 +77,25 @@ const Wrapper = styled.nav`
         button:hover > svg {
             background-color: hsla(0, 0%, var(--lightness2), 50%);
             outline: 0.3rem solid hsla(0, 0%, var(--lightness2), 50%);
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            @media (min-width: 980px) {
+                display: flex;
+            }
+
+            li {
+                margin: 1.5rem;
+                font-size: 2rem;
+                font-weight: bold;
+                a:hover {
+                    color: var(--clr2);
+                }
+            }
         }
     }
 `;
