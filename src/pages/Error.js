@@ -35,7 +35,7 @@ const Wrapper = styled.main`
     a {
         color: var(--clr2);
         padding: 1rem;
-        font-size: 2rem;
+        font-size: 1rem;
         border: 3px solid var(--clr2);
         text-decoration: none;
         border-radius: 0.5rem;
