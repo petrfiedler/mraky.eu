@@ -34,7 +34,6 @@ const Navbar = () => {
 const Wrapper = styled.nav`
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid hsl(0, 0%, var(--lightness10));
 
     div {
         width: 980px;
@@ -74,7 +73,8 @@ const Wrapper = styled.nav`
             outline: 0rem solid hsla(0, 0%, var(--lightness2), 0%);
         }
 
-        button:hover > svg {
+        button:hover > svg,
+        button:focus > svg {
             background-color: hsla(0, 0%, var(--lightness2), 50%);
             outline: 0.3rem solid hsla(0, 0%, var(--lightness2), 50%);
         }
@@ -92,8 +92,10 @@ const Wrapper = styled.nav`
                 margin: 1.5rem;
                 font-size: 2rem;
                 font-weight: bold;
-                a:hover {
+                a:hover,
+                a:focus {
                     color: var(--clr2);
+                    outline: none;
                 }
             }
         }
