@@ -5,13 +5,16 @@ import cloudsDivider from "../assets/cloudsDivider.svg";
 const Footer = () => {
     return (
         <Wrapper>
-            <img src={cloudsDivider} />
+            <img src={cloudsDivider} alt="cloud divider" />
             <section>
                 <ul>
                     <li>&copy;&nbsp;{new Date().getFullYear()} Petr Fiedler</li>
                     <li>
                         obrázky:{" "}
-                        <a href="https://whatsthiscloud.com/" target="_blank">
+                        <a
+                            href="https://whatsthiscloud.com/"
+                            target="_blank"
+                            rel="noreferrer">
                             whatsthiscloud
                         </a>
                     </li>
