@@ -42,7 +42,7 @@ const classification = [
     },
     {
         id: "ostatni",
-        name: "oststní oblaky",
+        name: "ostatní oblaky",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/10/flammagenitus-cloud.jpg",
         data: "other",
         text: [

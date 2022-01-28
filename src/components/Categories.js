@@ -23,7 +23,7 @@ const Categories = () => {
                             onMouseOver={() => setHighlight(category.id)}
                             onMouseLeave={() => setHighlight("")}
                             onFocus={() => setHighlight(category.id)}
-                            onFocusLeave={() => setHighlight("")}
+                            onBlur={() => setHighlight("")}
                             /*
                                 3 states:
                                     - all are highlighted: class ""
