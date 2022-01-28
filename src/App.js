@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Navbar, Sidebar } from "./components";
+import { Navbar, Sidebar, Footer } from "./components";
 import { Home, Druhy, Poddruhy, Error } from "./pages";
 function App() {
     return (
@@ -13,6 +13,7 @@ function App() {
                 <Route exact path="/poddruhy" element={<Poddruhy />} />
                 <Route path="*" element={<Error />} />
             </Routes>
+            <Footer />
         </BrowserRouter>
     );
 }
