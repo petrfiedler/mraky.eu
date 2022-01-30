@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import types from "../data/types";
-import Level from "./Level";
+import { Level } from "../components";
 
 const Druhy = () => {
     return (

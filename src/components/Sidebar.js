@@ -48,6 +48,7 @@ const Wrapper = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
 
         @media (min-width: 980px) {
             display: none;
