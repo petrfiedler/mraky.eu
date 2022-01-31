@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useGeneralContext } from "../context/generalContext";
 
 const Level = ({ types }) => {
-    const [highlight, setHighlight] = useState("");
+    const { highlightedCard, highlightCard, unhighlightCard } =
+        useGeneralContext();
     return (
         <Wrapper>
             {types.map((type) => {
@@ -11,14 +13,15 @@ const Level = ({ types }) => {
                     <Link
                         to={`/druhy/${type.id}`}
                         key={type.id}
-                        onMouseOver={() => setHighlight(type.id)}
-                        onMouseLeave={() => setHighlight("")}
-                        onFocus={() => setHighlight(type.id)}
-                        onBlur={() => setHighlight("")}
+                        onMouseOver={() => highlightCard(type.id)}
+                        onMouseLeave={() => unhighlightCard()}
+                        onFocus={() => highlightCard(type.id)}
+                        onBlur={() => unhighlightCard()}
+                        onClick={() => unhighlightCard()}
                         className={
-                            type.id === highlight
+                            type.id === highlightedCard
                                 ? "highlight"
-                                : highlight !== ""
+                                : highlightedCard !== ""
                                 ? "dim"
                                 : ""
                         }>

@@ -3,6 +3,7 @@ import reducer from "../reducers/generalReducer";
 
 const defaultState = {
     isSidebarShown: false,
+    highlightedCard: "",
 };
 
 const GeneralContext = React.createContext();
@@ -18,12 +19,22 @@ export const GeneralProvider = ({ children }) => {
         dispatch({ type: "SIDEBAR_HIDE" });
     };
 
+    const highlightCard = (card) => {
+        dispatch({ type: "CARD_HIGHLIGHT", card: card });
+    };
+
+    const unhighlightCard = () => {
+        dispatch({ type: "CARD_UNHIGHLIGHT" });
+    };
+
     return (
         <GeneralContext.Provider
             value={{
                 ...state,
                 showSidebar,
                 hideSidebar,
+                highlightCard,
+                unhighlightCard,
             }}>
             {children}
         </GeneralContext.Provider>
