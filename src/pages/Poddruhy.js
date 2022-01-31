@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import categories from "../data/categories";
+import { Cards } from "../components/";
 
 const Poddruhy = () => {
-    const [highlight, setHighlight] = useState("");
     return (
         <Wrapper>
             <h1>Poddruhy oblaků</h1>
@@ -14,35 +13,10 @@ const Poddruhy = () => {
                 přívlastky k základním druhům odvozené od mírných variací
                 vzhledu a pomáhají nám lépe popsat různá oblaka.
             </p>
-            <section>
-                {categories
-                    .filter((c) => c.id !== "druhy")
-                    .map((category) => {
-                        return (
-                            <Link
-                                to={`/druhy/${category.id}`}
-                                key={category.id}
-                                onMouseOver={() => setHighlight(category.id)}
-                                onMouseLeave={() => setHighlight("")}
-                                onFocus={() => setHighlight(category.id)}
-                                onBlur={() => setHighlight("")}
-                                className={
-                                    category.id === highlight
-                                        ? "highlight"
-                                        : highlight !== ""
-                                        ? "dim"
-                                        : ""
-                                }>
-                                <article>
-                                    <img
-                                        src={category.img}
-                                        alt={category.name}></img>
-                                    <h2>{category.name}</h2>
-                                </article>
-                            </Link>
-                        );
-                    })}
-            </section>
+            <Cards
+                cards={categories.filter((c) => c.id !== "druhy")}
+                link={(id) => `/poddruhy/${id}`}
+            />
         </Wrapper>
     );
 };
@@ -78,46 +52,6 @@ const Wrapper = styled.article`
         @media (max-width: 980px) {
             font-size: 1rem;
             line-height: 2rem;
-        }
-    }
-
-    section {
-        display: grid;
-        gap: 2rem;
-        margin: 0.25rem;
-        margin-bottom: 4rem;
-
-        @media (min-width: 980px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            background-color: white;
-            border-radius: 0.5rem;
-            overflow: hidden;
-            outline: 2px solid var(--clr1);
-            transition: all 0.3s ease-out;
-        }
-
-        .highlight {
-            transition: none;
-        }
-
-        .dim {
-            opacity: 0.5;
-        }
-
-        article {
-            img {
-                width: 100%;
-            }
-
-            h2 {
-                padding: 0rem;
-                text-align: center;
-            }
         }
     }
 `;

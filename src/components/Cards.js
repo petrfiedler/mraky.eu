@@ -1,33 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useGeneralContext } from "../context/generalContext";
 
-const Level = ({ types }) => {
+const Level = ({ cards, link = (id) => `/${id}` }) => {
     const { highlightedCard, highlightCard, unhighlightCard } =
         useGeneralContext();
     return (
         <Wrapper>
-            {types.map((type) => {
+            {cards.map((card) => {
                 return (
                     <Link
-                        to={`/druhy/${type.id}`}
-                        key={type.id}
-                        onMouseOver={() => highlightCard(type.id)}
+                        to={link(card.id)}
+                        key={card.id}
+                        onMouseOver={() => highlightCard(card.id)}
                         onMouseLeave={() => unhighlightCard()}
-                        onFocus={() => highlightCard(type.id)}
+                        onFocus={() => highlightCard(card.id)}
                         onBlur={() => unhighlightCard()}
                         onClick={() => unhighlightCard()}
                         className={
-                            type.id === highlightedCard
+                            card.id === highlightedCard
                                 ? "highlight"
                                 : highlightedCard !== ""
                                 ? "dim"
                                 : ""
                         }>
                         <article>
-                            <img src={type.img} alt={type.name}></img>
-                            <h2>{type.id}</h2>
+                            <img src={card.img} alt={card.name}></img>
+                            <h2>{card.name || card.id}</h2>
                         </article>
                     </Link>
                 );

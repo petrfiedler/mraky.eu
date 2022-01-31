@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import types from "../data/types";
-import { Level } from "../components";
+import { Cards } from "../components";
 
 const Druhy = () => {
     return (
@@ -18,11 +18,20 @@ const Druhy = () => {
                 Druhy oblaků rozdělujeme podle výškových pater:
             </p>
             <h2>Nízké patro:</h2>
-            <Level types={types.filter((type) => type.level === "low")} />
+            <Cards
+                cards={types.filter((type) => type.level === "low")}
+                link={(id) => `/druhy/${id}`}
+            />
             <h2>Střední patro:</h2>
-            <Level types={types.filter((type) => type.level === "middle")} />
+            <Cards
+                cards={types.filter((type) => type.level === "middle")}
+                link={(id) => `/druhy/${id}`}
+            />
             <h2>Vysoké patro:</h2>
-            <Level types={types.filter((type) => type.level === "high")} />
+            <Cards
+                cards={types.filter((type) => type.level === "high")}
+                link={(id) => `/druhy/${id}`}
+            />
         </Wrapper>
     );
 };

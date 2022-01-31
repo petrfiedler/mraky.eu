@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import heroImg from "../assets/homeHero.JPG";
-import { Categories } from "../components";
+import { Cards } from "../components";
+import categories from "../data/categories";
 
 const Home = () => {
     return (
@@ -9,7 +10,15 @@ const Home = () => {
             <header>
                 <h1>Naučte se identifikovat oblaky.</h1>
             </header>
-            <Categories />
+            <article>
+                <h1>Vyberte si, co chcete prostudovat:</h1>
+                <Cards
+                    cards={categories}
+                    link={(id) =>
+                        id === "druhy" ? "/druhy" : `/poddruhy/${id}`
+                    }
+                />
+            </article>
         </Wrapper>
     );
 };
@@ -30,6 +39,16 @@ const Wrapper = styled.main`
             font-size: 3rem;
             line-height: 1.5;
             padding: 3rem;
+        }
+    }
+    > article {
+        margin: 3rem auto;
+        width: min(980px, 95vw);
+
+        h1 {
+            padding: 2rem 1rem;
+            text-align: left;
+            color: var(--clr2);
         }
     }
 `;
