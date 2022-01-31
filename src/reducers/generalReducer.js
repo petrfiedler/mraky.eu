@@ -1,4 +1,4 @@
-const sidebarReducer = (state, action) => {
+const generalReducer = (state, action) => {
     if (action.type === "SIDEBAR_SHOW") {
         return { ...state, isSidebarShown: true };
     }
@@ -7,4 +7,4 @@ const sidebarReducer = (state, action) => {
     }
 };
 
-export default sidebarReducer;
+export default generalReducer;

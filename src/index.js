@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { SidebarProvider } from "./context/sidebarContext";
+import { GeneralProvider } from "./context/generalContext";
 
 ReactDOM.render(
-    <SidebarProvider>
+    <GeneralProvider>
         <App />
-    </SidebarProvider>,
+    </GeneralProvider>,
     document.getElementById("root")
 );

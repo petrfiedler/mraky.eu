@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import { useSidebarContext } from "../context/sidebarContext";
+import { useGeneralContext } from "../context/generalContext";
 import { navLinks } from "../constants/navLinks";
 
 const Sidebar = () => {
-    const { hideSidebar, isSidebarShown } = useSidebarContext();
+    const { hideSidebar, isSidebarShown } = useGeneralContext();
     return (
         <Wrapper>
             <aside className={`${isSidebarShown ? "shown" : "hidden"}`}>

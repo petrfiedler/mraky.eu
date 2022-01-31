@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FiMenu } from "react-icons/fi";
-import { useSidebarContext } from "../context/sidebarContext";
+import { useGeneralContext } from "../context/generalContext";
 import { navLinks } from "../constants/navLinks";
 
 const Navbar = () => {
-    const { showSidebar } = useSidebarContext();
+    const { showSidebar } = useGeneralContext();
 
     return (
         <Wrapper>

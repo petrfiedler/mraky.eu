@@ -1,13 +1,13 @@
 import React, { useContext, useReducer } from "react";
-import reducer from "../reducers/sidebarReducer";
+import reducer from "../reducers/generalReducer";
 
 const defaultState = {
     isSidebarShown: false,
 };
 
-const SidebarContext = React.createContext();
+const GeneralContext = React.createContext();
 
-export const SidebarProvider = ({ children }) => {
+export const GeneralProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, defaultState);
 
     const showSidebar = () => {
@@ -19,17 +19,17 @@ export const SidebarProvider = ({ children }) => {
     };
 
     return (
-        <SidebarContext.Provider
+        <GeneralContext.Provider
             value={{
                 ...state,
                 showSidebar,
                 hideSidebar,
             }}>
             {children}
-        </SidebarContext.Provider>
+        </GeneralContext.Provider>
     );
 };
 
-export const useSidebarContext = () => {
-    return useContext(SidebarContext);
+export const useGeneralContext = () => {
+    return useContext(GeneralContext);
 };
