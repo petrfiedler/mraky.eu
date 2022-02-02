@@ -31,14 +31,18 @@ const classification = [
         name: "zvláštnosti oblaků",
         img: "https://whatsthiscloud.com/wp-content/uploads/2019/03/kelvin-helmholtz-clouds.jpg",
         data: "features",
-        text: ["K jednomu oblaku můžeme přiřadit více různých zvláštností."],
+        text: [
+            "Zvláštnosti oblaků se dají chápat jako rozšíření odrůd. Jak už název napovídá, zvláštnosti bývají obecně vzácnější a zajímavější. K jednomu oblaku můžeme přiřadit více různých zvláštností.",
+        ],
     },
     {
         id: "pruvodni-oblaky",
         name: "průvodní oblaky",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/10/pileus-cloud.jpg",
         data: "accessory",
-        text: ["K jednomu oblaku můžeme přiřadit více různých zvláštností."],
+        text: [
+            "Průvodní oblaky jsou velice podobné zvláštnostem. Jejich rozdíl je, že průvodní oblaky jsou odděleny od hlavního oblaku. K jednomu oblaku můžeme přiřadit více různých průvodních oblaků.",
+        ],
     },
     {
         id: "ostatni",
