@@ -36,6 +36,10 @@ body {
 }
 
 main {
-    text-align: center;
-    margin: 5rem;
+    margin: 5rem auto;
+}
+
+main > article {
+    margin: 3rem auto;
+    width: min(980px, 95vw);
 }
