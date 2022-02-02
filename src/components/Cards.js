@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useGeneralContext } from "../context/generalContext";
+import { scrollToTop } from "../utils/utilFunctions";
 
 const Level = ({ cards, link = (id) => `/${id}` }) => {
     const { highlightedCard, highlightCard, unhighlightCard } =
@@ -17,7 +18,10 @@ const Level = ({ cards, link = (id) => `/${id}` }) => {
                         onMouseLeave={() => unhighlightCard()}
                         onFocus={() => highlightCard(card.id)}
                         onBlur={() => unhighlightCard()}
-                        onClick={() => unhighlightCard()}
+                        onClick={() => {
+                            unhighlightCard();
+                            scrollToTop();
+                        }}
                         className={
                             card.id === highlightedCard
                                 ? "highlight"
