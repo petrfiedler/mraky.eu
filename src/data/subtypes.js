@@ -1,6 +1,7 @@
 const subtypes = [
     {
         id: "species",
+        idCZ: "tvary",
         list: [
             {
                 id: "calvus",
@@ -81,18 +82,22 @@ const subtypes = [
     },
     {
         id: "varietes",
+        idCZ: "odrudy",
         list: [],
     },
     {
         id: "features",
+        idCZ: "zvlastnosti",
         list: [],
     },
     {
         id: "accessory",
+        idCZ: "pruvodni-oblaky",
         list: [],
     },
     {
         id: "other",
+        idCZ: "ostatni",
         list: [],
     },
 ];

@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import { capitalize } from "../utils/utilFunctions";
 
 const Heading = ({ children }) => {
-    return <Wrapper>{children}</Wrapper>;
+    return <Wrapper>{capitalize(children)}</Wrapper>;
 };
 
 const Wrapper = styled.h1`

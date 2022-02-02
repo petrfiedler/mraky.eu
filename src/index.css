@@ -49,3 +49,7 @@ main > article {
     margin: 3rem auto;
     width: min(980px, 95vw);
 }
+
+main > article > img {
+    width: 100%;
+}
