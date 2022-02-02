@@ -5,7 +5,7 @@ const Description = ({ children }) => {
     return <Wrapper>{children}</Wrapper>;
 };
 
-const Wrapper = styled.p`
+const Wrapper = styled.section`
     margin: 0 2rem 3rem;
     font-size: 1.2rem;
     line-height: 2.4rem;
