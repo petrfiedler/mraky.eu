@@ -26,6 +26,7 @@ const Footer = () => {
 
 const Wrapper = styled.footer`
     display: grid;
+    margin-top: auto;
     img {
         height: 10vw;
         width: 100%;

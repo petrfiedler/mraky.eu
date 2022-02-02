@@ -21,10 +21,11 @@ const Wrapper = styled.main`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(calc(100vh - 10vw) - 25rem);
+    margin: auto auto;
 
     h1 {
         font-size: 3rem;
+        text-align: center;
     }
 
     .triangle {

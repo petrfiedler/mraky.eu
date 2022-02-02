@@ -11,6 +11,10 @@ const Wrapper = styled.h1`
     font-size: 2.5rem;
     position: relative;
 
+    @media (max-width: 980px) {
+        padding-top: 0;
+    }
+
     :after {
         content: "";
         position: absolute;
