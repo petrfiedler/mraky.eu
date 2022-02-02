@@ -42,12 +42,8 @@ const Wrapper = styled.main`
         }
     }
     > article {
-        margin: 3rem auto;
-        width: min(980px, 95vw);
-
         h1 {
             padding: 2rem 1rem;
-            text-align: left;
             color: var(--clr2);
         }
     }
