@@ -111,7 +111,30 @@ const types = [
             "Menší nebo větší skupiny nebo vrstvy oblaků barvy bílé či šedé, popř. bílé a šedé, které mají vlastní stíny.",
         level: "middle",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/03/altocumulus-stratiformis-undulatus-1040x585.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Altocumulus, česky vyvýšená kupa, označovaný zkratkou Ac, je oblak středního patra. Je charakterizován jako menší nebo větší skupiny nebo vrstvy oblaků barvy bílé či šedé, popř. bílé a šedé, které mají vlastní stíny. Skládá se převážně z kapek vody, což je zřejmé z jeho poměrně neprůhledného vzhledu a ostrých okrajů. Kapky, ze kterých se skládá, jsou velmi malé a při velmi nízkých teplotách mohou zmrznout i na ledové krystalky.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/altocumulus-stratiformis-perlucidus-1040x585.jpg",
+                alt: "Altocumulus stratiformis perlucidus translucidus",
+            },
+            {
+                type: "text",
+                text: "Altocumulus je jeden z nejběžnějších druhů oblaků. Zároveň se jedná o jeden z nejrozmanitějších, protože u něj určujeme velké množství tvarů, odrůd a zvláštností. Altocumulus může nabírat podoby věžiček (castellanus) nebo také může tvořit chomáčky připomínající vlnu (floccus). Tento druh oblaku je rovněž známý tím, že může nejvýrazněji ze všech druhů vytvořit podobu čočky nebo létajícího talíře (lenticularis). Ačkoliv se altocumulus již skládá z kapiček vody, netvoří srážky dopadající na zemský povrch, pouze srážkové pruhy (virga), což jsou srážky, které se vypařují nebo sublimují ještě před tím, než dopadnou na zem.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/altocumulus-stratiformis-1040x585.jpg",
+                alt: "Altocumulus stratiformis",
+            },
+            {
+                type: "text",
+                text: "Altocumulus může vzniknout nárůstem velikosti alespoň částí vrstvy cirrocumulu, oddělením vrstvy stratocumulu nebo přeměnou altostratu či nimbostratu. Také často vzniká při vertikálním vývoji cumulů vytvořením stabilní vrstvy. V tomto případě se může stát, že růst cumulů pokračuje nad stabilní vrstvu altocumulu, altocumulus se tedy vyskytne na boční části cumulu. Toto může být při klasifikaci zavádějící, protože si můžeme myslet, že se díky částečnému výskytu oblaku nad altocumulem jedná o cumulonimbus calvus, může se však jednat pouze o cumulus congestus.",
+            },
+        ],
     },
     {
         id: "altostratus",
@@ -120,7 +143,30 @@ const types = [
             "Šedavá a modravá oblačná plocha nebo vrstva s vláknitou nebo žebrovitou strukturou nebo i bez patrné struktury, která pokrývá úplně nebo částečně oblohu.",
         level: "middle",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/03/altostratus-translucidus-1-1040x585.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Altostratus, česky vyvýšená sloha, zkratkou As, je oblak středního patra. Je mezinárodně definován jako šedavá a modravá oblačná plocha nebo vrstva s vláknitou nebo žebrovitou strukturou nebo i bez patrné struktury, která pokrývá úplně nebo částečně oblohu. Altostratus se skládá ze tří vrstev, kdy horní vrstva je složena z ledových krystalků, střední vrstva je složena z kombinace ledových krystalků, sněhových vloček a kapiček přechlazené vody a dolní vrstva je složena z kapek většinou přechlazené vody. Ne vždy se však skládá ze všech tří vrstev. Můžou nastat i případy, kdy altostratus obsáhuje pouze dvě ze zmíněných vrstev.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/altostratus-opacus-1040x585.jpg",
+                alt: "Altostratus opacus",
+            },
+            {
+                type: "text",
+                text: "Altostratus má většinou určité části natolik tenké, že přes něj můžeme alespoň částečně pozorovat Slunce (translucidus). Ačkoliv je to jeden z hlavních poznávacích faktorů tohoto oblaku, nemusí tomu tak být vždy. Přestože se altocumulus částečně skládá z ledových krystalků, neobjevují se na něm halové jevy, protože částečky ve spodní vrstě jsou velmi početné. Altostratus tvoří srážky, které dosahují zemského povrchu ve formě deště (i zmrzlého) nebo sněhu. Spodní povrch altostratu má občasně kvůli vypařujícím se srážkám potrhaný vzhled (virga).",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/altostratus-undulatus-1040x585.jpg",
+                alt: "Altostratus undulatus",
+            },
+            {
+                type: "text",
+                text: "Altostratus se může vytvořit buď rozšiřováním vrstvy cirrostratu, nebo naopak zužováním vrstvy nimbostratu. Také se může vytvořit z virgy altocumulu. Občas se altostratus vytvoří rozšířením vyšších částí cumulonimbu, což je typické zejména pro tropické podnebí.",
+            },
+        ],
     },
     {
         id: "nimbostratus",
@@ -129,7 +175,30 @@ const types = [
             "Šedá, často tmavá oblačná vrstva nebo plocha, která má vlivem vypadávání více méně trvalých dešťových nebo sněhových srážek matný rozplývavý vzhled.",
         level: "middle",
         img: "https://whatsthiscloud.com/wp-content/uploads/2019/03/nimbostratus-praecipitatio.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Nimbostratus, česky dešťová sloha, zkratkou Ns, je oblak středního patra. Je charakterizován Mezinárodní meteorologickou organizací jako šedá, často tmavá oblačná vrstva nebo plocha, která má vlivem vypadávání více méně trvalých dešťových nebo sněhových srážek matný rozplývavý vzhled. Nimbostratus obecně pokrývá širokou oblast pozorovatelné oblohy, většinou ji dokonce pokrývá celou. Je poměrně rozměrný i vertikálně, takže ačkoliv se zařazuje do středního patra, většinou také zasahuje do patra nízkého nebo dokonce i vysokého. Skládá se z kapek vody a sněhových vloček. ",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/nimbostratus-praecipitatio-pannus-1040x585.jpg",
+                alt: "Nimbostratus praecipitatio pannus",
+            },
+            {
+                type: "text",
+                text: "Přes nimbostratus nikdy není viditělné Slunce kvůli výšce tohoto oblaku a vysoké koncentraci jeho částeček. Toto je jeden z charakteristických znaků tohoto oblaku. Nimbostratus je také velice jednotvárný a velmi často produkuje srážky, které jsou většinou nepřetržité. Tento oblak je také typický pro zimní období, je to nejčastější zdroj sněžení. Jeho tloušťka mu dodává tmavší vzhled, než mají ostatní slohy.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/nimbostratus-1-1040x585.jpg",
+                alt: "Nimbostratus praecipitatio",
+            },
+            {
+                type: "text",
+                text: "Nimbostratus se většinou tvoří ztlušťuváním vrstvy altostratu nebo vzácně stratocumulu či altocumulu. Také se občas tvoří rozšiřováním cumulonimbu nebo dokonce cumulu congestu.",
+            },
+        ],
     },
     {
         id: "stratocumulus",
@@ -138,7 +207,39 @@ const types = [
             "Bílé nebo šedobílé vrsvy nebo skupiny oblaků, které mají téměř vždy tmavá místa.",
         level: "low",
         img: "https://whatsthiscloud.com/wp-content/uploads/2019/03/stratocumulus-sunset.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Stratocumulus, česky slohová kupa, označovaný také zkratkou Sc, je oblak nízkého patra. Je charakterizován jako bílé nebo šedobílé vrsvy nebo skupiny oblaků, které mají téměř vždy tmavá místa. Skládá se z kapiček vody. Velmi vzácně obsahuje sněhové vločky nebo ledové krystalky, které jsou ale tak řídké, že stratocumulu nedodávají vláknitý vzhled.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/stratocumulus-1040x585.jpg",
+                alt: "Stratocumulus",
+            },
+            {
+                type: "text",
+                text: "Stratocumulus je nejrozmanitější sloha, není jednotvárný, nýbrž je složen z mnoha různých tvarů podobných oblázkům, dlaždicím nebo válečkům. Jeho vzhled není vláknitý, pouze v případě virgy. Ta se může za velmi chladného počasí skládat z ledových krystalků, takže se na ní dokonce můžou vytvořit halové jevy. Stratocumulus dává také prostor jiným optickým jevům, zejména iridescenci nebo koróně, ale tvoří pouze v uzších místech.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2019/03/stratocumulus.jpg",
+                alt: "stratocumulus",
+            },
+            {
+                type: "text",
+                text: "Stratocumulus je z mnoha hledisek velice podobný altocumulu, ale je mnohem blíže k zemi, takže jeho komponenty vypadají (a také jsou) větší. Stratocumulus může stejně jako altocumulus nabírat mnoha různých podob, proto u něj také určujeme širokou škálu tvarů, odrůd a zvláštností. Může mít podobu například mnoha věžiček (castellanus), chomáčků vlny (floccus), čočky (lenticularis) nebo může mít dokonce i podobu jednoho velkého válce (volutus), což je typické zejména pro tropické podnebí.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/stratocumulus-floccus-1-1040x585.jpg",
+                alt: "Stratocumulus floccus",
+            },
+            {
+                type: "text",
+                text: "Stratocumulus se tvoří slabými konvekčními proudy, které mohou být vyvolány turbulentním prouděním horního vzduchu. Stratocumulus se drží v určité vrstvě, protože stabilní vrstva vzduchu nad tímto oblakem zastavuje konvekci, tedy zabraňuje dalšímu vertikálnímu růstu. Stratocumulus se může vytvořit z mnoha různých druhů oblaků. Například z altocumulu, když jeho součásti vyrostou do dostatečné velikosti. Také se často tvoří z nimbostratu díky vypařujícím se srážkám. Dále se může vytvořit rozšířením cumulu nebo cumulnimbu. A také se často tvoří transformací dalších sloh.",
+            },
+        ],
     },
     {
         id: "stratus",
@@ -147,7 +248,30 @@ const types = [
             "Šedá oblačná vrstva s dosti jednotvárnou základnou, z níž může vypadávat mrholení, popř. ledové jehličky nebo sněhová zrna.",
         level: "low",
         img: "https://whatsthiscloud.com/wp-content/uploads/2019/03/stratus-nebulosus1.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Stratus, česky sloha, zkratkou St, je oblak nízkého patra. Je definován jako šedá oblačná vrstva s dosti jednotvárnou základnou, z níž může vypadávat mrholení, popř. ledové jehličky nebo sněhová zrna. Obvykle se skládá z malých kapiček vody. Při velmi nízkých teplotách se může skládat z malých částeček ledu. V tomto případě na něm můžeme pozorovat i halové jevy.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/stratus-nebulosus-1040x585.jpg",
+                alt: "Stratus nebulosus",
+            },
+            {
+                type: "text",
+                text: "Stratus lze nejlépe popsat jako mlha, která se často vyskytuje i nad zemí. Jedná se o oblak, který se vyskytuje nejblíže k zemi. Můžeme přes něj pozorovat Slunce i spoměrně dobře rozeznatelným obrysem (translucidus), ale Slunce nemusí být přes tento oblak vždy viditelné (opacus). Stratus se také může vyskytnout v roztrhané formě (fractus). Občasmůžeme na stratu také pozorovat mírně zvlněnou strukturu (undulatus). Stratus má pouze dva tvary – již zmíněný fractus a nebulosus, který je opak fractu, tedy absolutně jednotvárný, bez detailů.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/stratus-1040x585.jpg",
+                alt: "Stratus nebulosus translucidus",
+            },
+            {
+                type: "text",
+                text: "Stratus je často tvořen slabou vertikální konvekcí vlhkého větru vzniklou ohříváním zemského povrchu nebo zvýšením rychlosti větru. Může se vyvinout ze stratocumulu, když se jeho spodní vrstva sníží nebo ztratí členitost. Také se může vytvořit z altostratu, nimbostratu nebo cumulonimbu. Také občas vznikne ze srážek cumulu.",
+            },
+        ],
     },
     {
         id: "cumulus",
@@ -156,7 +280,30 @@ const types = [
             "Osamocený oblak, obvykle hustý a s ostře ohraničenými obrysy, vyvíjející se směrem vzhůru ve tvaru kup, kupolí nebo věží.",
         level: "low",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulus-2-1040x585.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Cumulus, česky kupa, označovaný zkratkou Cu, je oblak nízkého patra. Je charakterizován jako osamocený oblak, obvykle hustý a s ostře ohraničenými obrysy, vyvíjející se směrem vzhůru ve tvaru kup, kupolí nebo věží. Skládá se hlavně z kapiček vody. V případě velkého vertikálního růstu se mohou v horních částech oblaku vyskytovat i krystalky ledu. Při dostatečné výšce také mohou z cumulu vypadávat srážky v podobě přeháněk, což však není moc časté. Velmi nízké teploty vedou k rozpadu cumulu v podobě sněhu.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulus-mediocris-1040x585.jpg",
+                alt: "Cumulus mediocris",
+            },
+            {
+                type: "text",
+                text: "Cumulus také patří mezi takzvané konvekční oblaky, protože se vždy vytáří vertikální konvekcí. Určujeme tři jeho tvary podle stádia vertikálního vývoje. Když je cumulus nejnižší, tj. jeho šířka je větší než výška, označujeme ho humilis. Když je jeho výška přibližně stejná jako jeho šířka, označujeme ho mediocris. Třetí stadium vývoje cumulu označujeme jako congestus, kdy jeho výška je větší než šířka. Nad ním můžeme občas zpozorovat doplňující oblak pileus, jakožto takovou čepici na vrcholu tohoto oblaku. Pokud konvekce cumulu congestu pokračuje, vyvine se do cumulonimbu. Určujeme ještě jeden tvar cumulu – fractus, a to když je roztrhaný.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulus-fractus-1040x585.jpg",
+                alt: "Cumulus fractus",
+            },
+            {
+                type: "text",
+                text: "Tvorbu cumulu většinou předchází výskyt mlhavých míst, ze kterých se následně tento oblak vytvoří. Může se vytvořit z altocumulu, stratocumulu nebo stratu. Také se často tvoří ve formě fractu pod oblaky jako jsou altostratus, nimbostratus nebo cumulonimbus.",
+            },
+        ],
     },
     {
         id: "cumulonimbus",
@@ -165,7 +312,39 @@ const types = [
             "Mohutný a hustý oblak velkého vertikálního rozsahu v podobě hor nebo obrovských věží.",
         level: "low",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulonimbus-capillatus-incus-1040x585.jpg",
-        article: [],
+        article: [
+            {
+                type: "text",
+                text: "Cumulonimbus, česky dešťová kupa, zkratkou Cb, je bouřkový oblak zasahující do všech výškových pater. Jeho výška může dosahovat až 20 000 m. Je charakterizován jako mohutný a hustý oblak velkého vertikálního rozsahu v podobě hor nebo obrovských věží. Skládá se z kapiček vody a hlavně ve vyšších vrstvách z krystalků ledu. Také často obsahuje dešťové kapky, sněhové vločky nebo kroupy. Kapky vody mohou být silně podchlazené.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulonimbus-arcus-1040x585.jpg",
+                alt: "Cumulonimbus arcus",
+            },
+            {
+                type: "text",
+                text: "Cumulonimbus má základ poměrně nízko k zemi. Dále roste konvekcí do značných výšek. Jedná se také o nejmasivněší z druhů oblaků. Dostatečně vyvinutý cumulonimbus má vláknitou strukturu horní části, takovému tvaru říkáme capillatus. Pokud vláknitou strukturu ještě nemá, říkáme takovému tvaru calvus. V každém případě má však cumulonimbus horní část alespoň mírně zploštělou. Často se horní vrsva cumulonimbu roztáhne natolik, že cumulonimbus vytvoří tvar kovadliny (incus). Cumulonimbus je také častý oblak pro tvorbu zvláštnosti mamma, kdy se na jeho povrchu vytvoří díky nestabilnímu prostředí pole kulatých výčnělků.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulonimbus-incus.jpg",
+                alt: "Cumulonimbus capillatus incus",
+            },
+            {
+                type: "text",
+                text: "Cumulonimbus je známý hlavně tím, že tvoří bouřky. Ne vždy však musí z cumulonimbu bouřka vzniknout. V případě rotace tohoto oblaku může vzniknout velice intenzivní konvektivní bouře zvaná supercela s výskytem dlouhotrvajícího vzestupného konvekčního proudu a s ním spojené mezocyklóny. Supercela obvykle tvoří velké množství krup a za určitých podmínek může produkovat tornáda.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cumulonimbus-tuba-1040x585.jpg",
+                alt: "Cumulonimbus tuba",
+            },
+            {
+                type: "text",
+                text: "Cumulonimbus se ve většině případů vytváří konvekcí z cumulu congestu, kdy vertikální růst pokračuje. Vzácně se pak může vytvořit z altocumulu nebo stratocumulu, konkrétně z jejich tvaru castellanus v podobě věžiček. V tomto případě má cumulonimbus neobvykle vysoko položený základ.",
+            },
+        ],
     },
 ];
 
