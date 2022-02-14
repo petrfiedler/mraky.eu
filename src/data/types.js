@@ -6,6 +6,39 @@ const types = [
             "Vzájemně oddělené oblaky v podobě bílých jemných vláken, bílých plošek nebo úzkých pruhů.",
         level: "high",
         img: "https://whatsthiscloud.com/wp-content/uploads/2018/07/cirrus-floccus-cirrus-uncinus-1040x585.jpg",
+        article: [
+            {
+                type: "text",
+                text: "Cirrus, v češtině řasa, je oblak vysokého patra. Je definován jako vzájemně oddělené oblaky v podobě bílých jemných vláken, bílých plošek nebo úzkých pruhů. Díky svému výskytu ve vysoké nadmořské výšce jsou tato oblaka tvořena téměř výhradně ledovými krystalky, které jsou velmi malé a řídké, což přispívá k průhlednosti většiny cirrů. Cirrus je obecně označován zkratkou Ci.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2019/03/cirrus-fibratus-floccus.jpg",
+                alt: "Cirrus fibratus, Cirrus floccus",
+            },
+            {
+                type: "text",
+                text: "Cirrus má přirozeně vláknitý vzhled, díky tomu je poměrně dobře rozpoznatelný od ostatních druhů oblaků. Ne všechny cirry však mají vláknitý vzhled výrazný. Také často mívají hedvábný lesk. Cirry mohou být shluklé do sebe, potom oproti běžnému bílému zbarvení nabírají šedé (spissatus). Také mohou být zamotané (intortus). Dále se cirry vyskytují v mnoha dalších ruzných tvarech, dokonce mohou vytvořit i chomáčkovitý vzhled. V takových případech už je morfologická klasifikace obtížnější.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/07/cirrus-floccus-radiatus-1040x585.jpg",
+                alt: "Cirrus floccus radiatus",
+            },
+            {
+                type: "text",
+                text: "Cirrus vzniká turbulencí při silné vertikální změně směru větru nebo konvekcí v nestabilních vrstvách atmosféry. Také může vznikat oddělením ledových krystalků při rozpadu cumulonimbu či jiných oblaků s rozsahem do vysoké výšky. Může se vytvořit z cirrocumulu nebo altocumulu, konkrétně z jejich zvláštnosti virga. Také se může vytvořit vypařováním tenčích částí cirrostratu.",
+            },
+            {
+                type: "image",
+                src: "https://whatsthiscloud.com/wp-content/uploads/2018/03/cirrus-uncinus-1040x585.jpg",
+                alt: "Cirrus uncinus",
+            },
+            {
+                type: "text",
+                text: "Na cirru, stejně jako na cirrostratu, můžeme také pozorovat halové jevy. Ty jsou tvořeny pomocí hexagonálních krystalků ledu, které ohýbají dopadající sluneční paprsky. Vhodné podmínky mohou přispět k tvorbě bílých nebo barevných kruhů, oblouků a skvrn vizuálně okolo nebo v blízkosti Slunce či Měsíce. Běžné halové jevy jsou například velké halo, malé halo, cirkumzenitální oblouk, halový sloup nebo parhelický kruh. Na cirru se však téměř nikdy nevyskytuje celý halový kruh.",
+            },
+        ],
     },
     {
         id: "cirrocumulus",
